@@ -22,6 +22,10 @@ const BusinessPromotion = require('./Models/business');
 const User = require('./Models/User');
 
 
+app.get('/', async (req, res) => {
+  res.json('This is a waresun social bcakend')
+})
+
 app.post('/login', async (req, res) => {
   const { email, password: IncommingPass } = req.body;
   console.log(req.body, 'body');
